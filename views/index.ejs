@@ -8,63 +8,12 @@
   <body>
     <main>
       
-      <a href="http://link_para_repo.com">
-        <img src="/img/avatar.jpg" alt="Nome da Pessoa">
+      <% for(let seguidor of seguidores){ %>
+      <a href="/<%= seguidor.login %>">
+        <img src="<%= seguidor.img %>" alt="<%= seguidor.login %>">
       </a>
-      
-      <a href="http://link_para_repo.com">
-        <img src="/img/avatar.jpg" alt="Nome da Pessoa">
-      </a>
-      
-      <a href="http://link_para_repo.com">
-        <img src="/img/avatar.jpg" alt="Nome da Pessoa">
-      </a>
-      
-      <a href="http://link_para_repo.com">
-        <img src="/img/avatar.jpg" alt="Nome da Pessoa">
-      </a>
-      
-      <a href="http://link_para_repo.com">
-        <img src="/img/avatar.jpg" alt="Nome da Pessoa">
-      </a>
-      <a href="http://link_para_repo.com">
-        <img src="/img/avatar.jpg" alt="Nome da Pessoa">
-      </a>
-      
-      <a href="http://link_para_repo.com">
-        <img src="/img/avatar.jpg" alt="Nome da Pessoa">
-      </a>
-      
-      <a href="http://link_para_repo.com">
-        <img src="/img/avatar.jpg" alt="Nome da Pessoa">
-      </a>
-      
-      <a href="http://link_para_repo.com">
-        <img src="/img/avatar.jpg" alt="Nome da Pessoa">
-      </a>
-      
-      <a href="http://link_para_repo.com">
-        <img src="/img/avatar.jpg" alt="Nome da Pessoa">
-      </a>
-      <a href="http://link_para_repo.com">
-        <img src="/img/avatar.jpg" alt="Nome da Pessoa">
-      </a>
-      
-      <a href="http://link_para_repo.com">
-        <img src="/img/avatar.jpg" alt="Nome da Pessoa">
-      </a>
-      
-      <a href="http://link_para_repo.com">
-        <img src="/img/avatar.jpg" alt="Nome da Pessoa">
-      </a>
-      
-      <a href="http://link_para_repo.com">
-        <img src="/img/avatar.jpg" alt="Nome da Pessoa">
-      </a>
-      
-      <a href="http://link_para_repo.com">
-        <img src="/img/avatar.jpg" alt="Nome da Pessoa">
-      </a>
+      <% } %>
+     
     </main>
   </body>
 </html>
